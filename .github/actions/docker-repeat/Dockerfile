@@ -1,4 +1,4 @@
-ROM python:3
+FROM python:3.9.14-alpine3.16
 
 COPY . .
 
