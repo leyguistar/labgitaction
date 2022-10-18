@@ -1,0 +1,19 @@
+name: 'test de las acciones'
+author: 'ley'
+description: 'es algo que prueba las acciones de gitaction'
+inputs:
+  input_text:
+    description: 'El texto que se va a repetir'
+    required: true
+  num_of_repeats:
+    description: 'numero de repeticiones'
+    required: true
+outputs:
+  output_text:
+    description: 'el texto repetido el numero de veces indicado'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'rotate-cw'
+  color: 'blue'
