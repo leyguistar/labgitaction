@@ -6,7 +6,7 @@ jobs:
     steps:
       -uses: actions/checkout@v1
       -name: Docker repeat action
-        uses: ../action/docker-repeat
+        uses: ./.github/actions/docker-repeat
         id: docker-action
         with:
           input_text: "text de prueba"
