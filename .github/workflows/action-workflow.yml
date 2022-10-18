@@ -8,8 +8,8 @@ jobs:
       - name: Docker repeat action
         uses: ./.github/actions/docker-repeat
         id: docker-action
-          with:
-            input_text: "text de prueba"
-            num_of_repeats: "4"
+        with:
+          input_text: "text de prueba"
+          num_of_repeats: "4"
       - name: Print docker output
         run: echo ${{steps.docker-action.output.output_text}}
